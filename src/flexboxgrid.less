@@ -1,0 +1,47 @@
+
+// Core variables and mixins
+@import "flexboxgrid-variables.less";
+@import "flex-mixins.less";
+@import "flexboxgrid-mixins.less";
+
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
+.container {
+  .container();
+}
+.row {
+  .row();
+}
+
+.row.reverse {
+  .row-reverse();
+}
+.col.reverse {
+  .col-reverse();
+}
+
+.makegrid(xs);
+
+@media only screen and (min-width: @screen-sm-min) { // ap-bootstrap-variables.less: 0px;
+  .container {
+    width: 46rem;
+  }
+  .makegrid(sm);
+}
+@media only screen and (min-width: @screen-md-min) { // ap-bootstrap-variables.less: (960px + @nav-width);
+  .container {
+    width: 46rem;
+  }
+  .makegrid(md);
+}
+@media only screen and (min-width: @screen-lg-min) { // ap-bootstrap-variables.less: 9000;
+  .container {
+    width: 46rem;
+  }
+  .makegrid(lg);
+}
