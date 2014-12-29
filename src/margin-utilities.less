@@ -1,0 +1,19 @@
+.generate-columns(20);
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+  // 2, 4, 6, etc
+  .u-mb-@{i} {
+    margin-bottom: (@i * 2px);//(@i * 100% / @n)
+  }
+  .generate-columns(@n, (@i + 1));
+}
+
+/* no-gutters Class Rules */
+.row.no-gutters {
+   margin-right: 0;
+   margin-left: 0;
+}
+.row.no-gutters [class^="col-"],
+.row.no-gutters [class*=" col-"]{
+   padding-right: 0;
+   padding-left: 0;
+}
