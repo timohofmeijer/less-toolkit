@@ -75,6 +75,7 @@
   .col-@{class}-@{col-number} {
     .m-flex-basis( ((100% / @grid-columns) * @col-number) );
     max-width: ((100% / @grid-columns) * @col-number);
+    position: relative;
   }
 }
 
@@ -149,19 +150,19 @@
 
 @media only screen and (min-width: @screen-sm-min) { // ap-bootstrap-variables.less: 0px;
   .container {
-    width: 46rem;
+    width: @container-sm;
   }
   .m-makegrid(sm);
 }
 @media only screen and (min-width: @screen-md-min) { // ap-bootstrap-variables.less: (960px + @nav-width);
   .container {
-    width: 46rem;
+    width: @container-md;
   }
   .m-makegrid(md);
 }
 @media only screen and (min-width: @screen-lg-min) { // ap-bootstrap-variables.less: 9000;
   .container {
-    width: 46rem;
+    width: @container-lg;
   }
   .m-makegrid(lg);
 }

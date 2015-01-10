@@ -8,9 +8,20 @@
 }
 
 /* no-gutters Class Rules */
+// Container without gutters
+.container.no-gutter {
+  padding-left: 0;
+  padding-right: 0;
+  .row {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+// Individual row without gutters
+// Can't be inside gutterless container!
 .row.no-gutters {
-   margin-right: 0;
-   margin-left: 0;
+   margin-right: -@outer-margin;
+   margin-left: -@outer-margin;
 }
 .row.no-gutters [class^="col-"],
 .row.no-gutters [class*=" col-"]{
