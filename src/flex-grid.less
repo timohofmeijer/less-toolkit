@@ -82,7 +82,7 @@
   }
 }
 
-.m-make-offsets(@class; @col-number: (@grid-columns - 1)) when (@col-number > 0) {
+.m-make-offsets(@class; @col-number: (@grid-columns - 1)) when (@col-number >= 0) {
   .m-make-offsets(@class; (@col-number - 1));
   .col-@{class}-offset-@{col-number} {
     margin-left: ((100% / @grid-columns) * @col-number);
@@ -131,8 +131,8 @@
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-right: 2rem;
-  padding-left: 2rem;
+  padding-right: @half-gutter-width;
+  padding-left: @half-gutter-width;
 }
 
 .container {
