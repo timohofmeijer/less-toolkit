@@ -1,3 +1,8 @@
+
+///////////////
+// DEPENDENCIES
+@import 'flex-mixins.less';
+
 .generate-columns(20);
 .generate-columns(@n, @i: 1) when (@i =< @n) {
   // 2, 4, 6, etc
@@ -71,4 +76,21 @@
             -ms-flex-pack : center;
   -webkit-justify-content : center;
           justify-content : center;
+}
+
+.u-flexbox {
+  .m-flexbox();
+}
+
+
+.u-vertical-centered-container {
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  .m-flexbox();
+  .m-flex-direction(column);
+  .m-justify-content(center);
+  .m-align-items(center);
 }
