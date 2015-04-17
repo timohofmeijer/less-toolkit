@@ -1,0 +1,38 @@
+{
+  "name": "less-toolkit",
+  "version": "0.0.8",
+  "homepage": "https://github.com/timohofmeijer/less-toolkit",
+  "authors": [
+    "Timo Hofmeijer <t@hofmeijer.me>"
+  ],
+  "description": "less toolbox providing flex-mixins, flex-grid and utilities",
+  "main": "src/less-toolkit.less",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "less",
+    "toolkit",
+    "grid",
+    "flexbox"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.0.7",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.7",
+    "commit": "a4514e6535393774f26bed173c52cb646fe20abe"
+  },
+  "_source": "https://github.com/timohofmeijer/less-toolkit.git",
+  "_target": "0.0.7",
+  "_originalSource": "https://github.com/timohofmeijer/less-toolkit.git"
+}
